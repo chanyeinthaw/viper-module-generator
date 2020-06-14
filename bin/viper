@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
 require "viper/main"
-
-puts "Hello"
+main

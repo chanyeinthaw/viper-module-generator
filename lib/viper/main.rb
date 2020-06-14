@@ -1,5 +1,18 @@
-require "viper/sources/sources"
+require "viper/config"
 
-mapz = Sources::create_sources_map 'TestCla'
+def main
+    if ARGV.count < 2
+        puts "Invalid Arguments!"
+        return
+    end
 
-puts mapz
+    command = ARGV[0]
+    command_argv = ARGV[1]
+
+    case command
+    when "init"
+        create_new_config command_argv
+    else
+        puts "Invalid Arguments!"
+    end
+end
