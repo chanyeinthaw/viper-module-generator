@@ -1,5 +1,5 @@
-require "viper/config"
-require "viper/sources/sources"
+require "vipera/config"
+require "vipera/sources/sources"
 
 def main
     if ARGV.count < 1 then raise "Invalid arguments!" end

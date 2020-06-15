@@ -1,10 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "viper/version"
+require "vipera/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "viper"
+  spec.name          = "vipera"
   spec.version       = Viper::VERSION
   spec.authors       = ["Chan Nyein Thaw"]
   spec.email         = ["chanyeinthaw@outlook.com"]

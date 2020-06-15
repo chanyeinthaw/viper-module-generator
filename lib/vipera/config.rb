@@ -1,7 +1,7 @@
 require 'json'
 require 'xcodeproj'
 
-CONFIG_DIR = "#{Dir.pwd}/viper-config.json"
+CONFIG_DIR = "#{Dir.pwd}/vipera-config.json"
 
 def create_new_config(module_root_dir)
 

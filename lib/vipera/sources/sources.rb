@@ -1,10 +1,10 @@
-require 'viper/sources/protocols'
-require 'viper/sources/router'
-require 'viper/sources/presenter'
-require 'viper/sources/interactor'
-require 'viper/sources/view'
-require 'viper/sources/webservice'
-require 'viper/sources/localstorage'
+require 'vipera/sources/protocols'
+require 'vipera/sources/router'
+require 'vipera/sources/presenter'
+require 'vipera/sources/interactor'
+require 'vipera/sources/view'
+require 'vipera/sources/webservice'
+require 'vipera/sources/localstorage'
 
 module Sources
     PASCAL_CASE_REGEX = /^[A-Z][a-z]+(?:[A-Z][a-z]+)*$/
