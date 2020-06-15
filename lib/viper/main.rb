@@ -1,18 +1,26 @@
 require "viper/config"
+require "viper/sources/sources"
 
 def main
-    if ARGV.count < 2
-        puts "Invalid Arguments!"
-        return
-    end
+    if ARGV.count < 1 then raise "Invalid arguments!" end
 
-    command = ARGV[0]
-    command_argv = ARGV[1]
+    module_name = ARGV[0]
 
-    case command
-    when "init"
-        create_new_config command_argv
-    else
-        puts "Invalid Arguments!"
+    config = read_config
+    xcodeproj = read_xcodeproj config
+
+    source_map = Sources::create_sources_map module_name
+    Sources::generate_sources module_name, xcodeproj, read_config, source_map
+
+    xcodeproj.save
+
+    puts "Module #{module_name} generated!"
+end
+
+def run_main
+    begin
+        main
+    rescue StandardError => e
+        puts e.message
     end
 end

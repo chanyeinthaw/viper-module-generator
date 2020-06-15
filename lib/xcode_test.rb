@@ -7,7 +7,7 @@ global_edu_gp = (project.groups.filter { |group| group.display_name == 'GlobalEd
 puts global_edu_gp.real_path
 
 test_gp = global_edu_gp.new_group('testGp', "#{global_edu_gp.real_path}/testGp")
-test_gp.new_file("test.swift")
+# test_gp.new_file("test.swift")
 # project.groups.each do |group|
 #   puts group.display_name
 #   # group.new_file("file.swift")
