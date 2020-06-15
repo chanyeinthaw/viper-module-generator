@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "viper"
   spec.version       = Viper::VERSION
   spec.authors       = ["Chan Nyein Thaw"]
-  spec.email         = ["channyeinthaw@amdon.com"]
+  spec.email         = ["chanyeinthaw@outlook.com"]
 
   spec.summary       = "Viper Module Generator"
   spec.description   = "Viper Module Generator"
