@@ -55,6 +55,8 @@ module Sources
     end
 
     def self.generate_sources(name, xcodeproj, config, source_map)
+        config_targets = config['targets']
+        targets =  xcodeproj.targets.filter { |tg| config_targets.include? tg.name }
         target_path = "#{Dir.pwd}/#{config["module-root"]}/#{name}/"
         if File.exists? target_path then raise "Module already exists!" end
 
@@ -87,7 +89,11 @@ module Sources
 
                 File.write file_path, content
 
-                key_group.new_file file_name
+                file = key_group.new_file file_name
+
+                targets.each do |target|
+                    target.add_file_references [file]
+                end
             }
         }
 

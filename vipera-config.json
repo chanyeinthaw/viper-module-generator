@@ -1,0 +1,7 @@
+{
+  "module-root":"../../../Desktop/pagewerkz-reader-ios/GlobalEdu/Screens/",
+  "xcodeproj": "../../../Desktop/pagewerkz-reader-ios/GlobalEdu.xcodeproj",
+  "targets": [
+    "Novusdemia LMS"
+  ]
+}
