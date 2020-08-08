@@ -4,12 +4,12 @@ module Sources
         import UIKit
         
         protocol #{name}ViewProtocol {
-            var presenter: #{name}PresenterInputProtocol? { get set }
+            var presenter: #{name}PresenterProtocol? { get set }
             
             // PRESENTER -> VIEW
         }
 
-        protocol #{name}PresenterInputProtocol {
+        protocol #{name}PresenterProtocol {
             var view: #{name}ViewProtocol? { get set }
             var interactor: #{name}InteractorInputProtocol? { get set }
             var router: #{name}RouterProtocol? { get set }

@@ -1,1 +1,4 @@
-{"module-root":"./"}
+{
+  "module-root":"./",
+  "xcodeproj": "x"
+}

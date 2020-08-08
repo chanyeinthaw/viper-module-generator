@@ -5,8 +5,6 @@ module Sources
         
         class #{name}ViewController: UIViewController {
             var presenter: #{name}InteractorOutputProtocol?
-            var localStorage: #{name}LocalStorageInputProtocol?
-            var webService: #{name}WebServiceInputProtocol?
         }
 
         //  MARK: PRESENTER -> VIEW

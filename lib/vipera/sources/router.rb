@@ -11,7 +11,7 @@ module Sources
                 
                 let router: #{name}RouterProtocol = #{name}Router()
                 var presenter: #{name}PresenterProtocol & #{name}InteractorOutputProtocol = #{name}Presenter()
-                var interactor: #{name}InteractorInputProtocol = #{name}Interactor()
+                var interactor: #{name}InteractorInputProtocol & #{name}WebServiceOutputProtocol = #{name}Interactor()
                 let localStorage: #{name}LocalStorageProtocol = #{name}LocalStorage()
                 let webService: #{name}WebServiceInputProtocol = #{name}WebService()
 
