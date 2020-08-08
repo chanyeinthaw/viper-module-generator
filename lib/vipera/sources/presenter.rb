@@ -3,7 +3,7 @@ module Sources
         return "#{name}Presenter.swift", <<~PRESENTER
         import UIKit
         
-        class #{name}Presenter: #{name}PresenterInputProtocol {
+        class #{name}Presenter: #{name}PresenterProtocol {
             var view: #{name}ViewProtocol?
             var interactor: #{name}InteractorInputProtocol?
             var router: #{name}RouterProtocol?
